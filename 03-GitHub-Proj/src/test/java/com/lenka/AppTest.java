@@ -10,6 +10,7 @@ import junit.framework.TestSuite;
 public class AppTest 
     extends TestCase
 {
+	public App app;
     /**
      * Create the test case
      *
@@ -17,7 +18,9 @@ public class AppTest
      */
     public AppTest( String testName )
     {
+    	 
         super( testName );
+        app=new App();
     }
 
     /**
@@ -29,16 +32,20 @@ public class AppTest
     }
 
   public void testAddition() {
-	  App app=new App();
 	  int actual=app.add(10, 15);
 	  int expected=25;
 	  assertEquals(expected, actual);
   }
   
   public void testSubstraction() {
-	  App app=new App();
 	  int actual=app.sub(25, 10);
 	  int expected=15;
+	  assertEquals(expected, actual);
+  }
+  
+  public void testAddNegative() {
+	  int actual=app.add(-45, -10);
+	  int expected=-55;
 	  assertEquals(expected, actual);
   }
     public void testApp()
