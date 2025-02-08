@@ -48,6 +48,12 @@ public class AppTest
 	  int expected=-55;
 	  assertEquals(expected, actual);
   }
+  
+  public void testAddZero() {
+	  int actual=app.add(0, 45);
+	  int expected=45;
+	  assertEquals(expected, actual);
+  }
     public void testApp()
     {
         assertTrue( true );
