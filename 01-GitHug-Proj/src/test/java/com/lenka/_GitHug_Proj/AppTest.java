@@ -1,38 +1,17 @@
 package com.lenka._GitHug_Proj;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import static org.junit.Assert.assertEquals;
 
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
+import org.junit.Test;
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
+public class AppTest {   
+   
+    @Test
+    public void testAddPositive()
     {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+    	App app=new App();
+    	int expected=30;
+    	int actual=app.sub(10, 20);
+        assertEquals(expected, actual);
     }
 }
