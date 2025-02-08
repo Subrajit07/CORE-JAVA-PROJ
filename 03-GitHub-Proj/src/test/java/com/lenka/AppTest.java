@@ -34,6 +34,13 @@ public class AppTest
 	  int expected=25;
 	  assertEquals(expected, actual);
   }
+  
+  public void testSubstraction() {
+	  App app=new App();
+	  int actual=app.sub(25, 10);
+	  int expected=15;
+	  assertEquals(expected, actual);
+  }
     public void testApp()
     {
         assertTrue( true );
