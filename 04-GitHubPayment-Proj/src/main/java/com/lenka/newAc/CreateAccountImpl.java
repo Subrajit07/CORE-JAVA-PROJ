@@ -14,7 +14,6 @@ public class CreateAccountImpl implements CreateAccount {
 
 	@Override
 	public String applyCard(long accno, long adhar) {
-		// TODO Auto-generated method stub
-		return null;
+		return "Card will be deliver under 3 working days ";
 	}
 }
